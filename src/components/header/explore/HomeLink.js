@@ -10,7 +10,7 @@ const HomeLink = ()=>{
     return(
         <Fragment>
             <div className="home-link">
-                <Link to="/">
+                <Link to="/ecommerce">
                     <span><FontAwesomeIcon icon={faLandmarkDome}/></span>
                     <span className="link-text">Home</span>
                 </Link>

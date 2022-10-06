@@ -13,7 +13,7 @@ const Header = ({handleSideNavAppear})=>{
         <Fragment>
             <header className="main-header">
                     <section className="container header-container">
-                        <Link to="/"> <Logo/></Link>
+                        <Link to="/ecommerce"> <Logo/></Link>
                         <div className="bars"
                         onClick={handleSideNavAppear}><FontAwesomeIcon icon={faBars}/></div>
                         <HomeLink/>

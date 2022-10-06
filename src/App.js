@@ -33,8 +33,8 @@ function App() {
               </div>
             ): ""}
               <Routes>
-                  <Route path='/' element ={<Home toggle = {toggle} />}/>
-                  <Route path='/' element ={<HomeLink />}/>
+                  <Route path='/ecommerce' element ={<Home toggle = {toggle} />}/>
+                  <Route path='/ecommerce' element ={<HomeLink />}/>
                   <Route path='/cart' element = {<Cart/>}/>
                   <Route path='/favorites' element= {<Favorites/>}/>
                   <Route path='/account' element= {<Account/>}/>
