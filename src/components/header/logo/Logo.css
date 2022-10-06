@@ -1,0 +1,21 @@
+.logo {
+    margin: 0px 0px 0px 10px;
+}
+.logo-title {
+    background-color: var(--danger);
+    margin: 0px;
+    padding: 10px 0px;
+    width: fit-content;
+    position: relative;
+    color: var(--white);
+    font-family: var(--second-font-family);
+    cursor: pointer;
+}
+.logo-title::after {
+    content: "U";
+    position: absolute;
+    top: 8px;
+    left: -20px;
+    font-size: 30px;
+    color: var(--black);
+}

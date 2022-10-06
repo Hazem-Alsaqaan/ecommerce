@@ -1,0 +1,22 @@
+.body-app{
+    padding: 150px 0px 0px 0px;
+    background-color: #f9feff;
+    min-height: 100vh;
+    position: relative;
+}
+.body-app .fa-circle-xmark{
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.body-app .after-body-app{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.507);
+    min-height: 100%;
+    min-width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}
