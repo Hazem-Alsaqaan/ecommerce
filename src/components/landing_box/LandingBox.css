@@ -1,0 +1,44 @@
+.landing{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px 10px;
+    margin: 20px 0px;
+    width: 100%;
+}
+.landing-box {
+    position: relative;
+}
+.landing-box img {
+    width: 100%;
+}
+.landing-box .landing-box-text{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.landing-box .landing-box-text h1,
+.landing-box .landing-box-text h4{
+    text-transform: uppercase;
+    color: var(--light2);
+}
+.landing-box .landing-box-text h1{
+    animation-name: textTransite;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes textTransite {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}

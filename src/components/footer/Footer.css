@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #b8b8b8;
+}
+.footer h4 {
+    color: var(--gray-dark);
+    cursor: pointer;
+    transition-duration: .8s;
+    width: fit-content;
+}
+.footer h4:hover {
+    color: var(--danger);
+}

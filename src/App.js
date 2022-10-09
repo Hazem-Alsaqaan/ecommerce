@@ -13,6 +13,8 @@ import Electronics from './components/navigation_items/Electronics';
 import Jewelery from './components/navigation_items/Jewelery';
 import Men from './components/navigation_items/Men';
 import Women from './components/navigation_items/Women';
+import Footer from './components/footer/Footer';
+import Contact from './pages/contact_us/Contact';
 
 
 function App() {
@@ -42,8 +44,10 @@ function App() {
                   <Route path='/jewelery' element= {<Jewelery toggle = {toggle}/>}/>
                   <Route path='/men' element= {<Men toggle = {toggle}/>}/>
                   <Route path='/women' element= {<Women toggle = {toggle}/>}/>
+                  <Route path='/contact' element= {<Contact/>}/>
               </Routes>
           </div>
+          <Footer/>
         </div>
     </Fragment>
   );

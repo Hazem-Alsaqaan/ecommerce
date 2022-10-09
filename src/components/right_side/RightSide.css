@@ -1,0 +1,19 @@
+.right-side{
+    background-color: var(--blue-light);
+    padding: 20px 10px;
+    box-shadow: 0px 0px 12px -5px #808080;
+    border: 1px solid #b8b8b8;
+    max-height: 100vh;
+    min-width: fit-content;
+    overflow-y: auto;
+    transition-duration: .8s;
+}
+.right-side ul {
+    padding: 0px;
+    margin: 0px;
+}
+@media(max-width: 992px){
+    .right-side{
+        display: none;
+    }
+}

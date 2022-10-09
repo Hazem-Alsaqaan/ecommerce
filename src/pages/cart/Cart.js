@@ -47,8 +47,8 @@ const Cart = ()=>{
                                                             <img src={cart.image} alt=""/>
                                                         </td>
                                                         <td>
-                                                            <button className="btn btn-danger p-1"
-                                                            onClick={()=>dispatch(removeCart(cart))}>Remove</button>
+                                                            <button className="btn btn-danger"
+                                                            onClick={()=>dispatch(removeCart(cart))}>remove</button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
