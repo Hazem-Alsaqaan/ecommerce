@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import "./Slider.css"
 import { useSelector } from "react-redux";
+import sliderFaceImg from "../../photo/landingBox_3.jpg"
 
 
 const Slider = ()=>{
+    
     const allProducts = useSelector((state)=> state.allProducts);
 
 
@@ -13,11 +15,11 @@ const Slider = ()=>{
                     <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div  className="carousel-item active" data-bs-interval="10000">
-                                <img src={allProducts.products[19].image} className="d-block w-100" height="300px" max-width="200px" alt="..."/>
+                                <img src={sliderFaceImg} className="d-block w-100" height="300px" max-width="200px" alt="..."/>
                             </div>
                         {allProducts.products.map((item)=>
                         item.category === "electronics"?(
-                            <div key={item.id} className="carousel-item" data-bs-interval="2000">
+                            <div key={item.id} onSelect={(e)=> e.currentTarget.style.display = "block"} className="carousel-item" data-bs-interval="2000">
                                 <img src={item.image} className="d-block w-100" height="300px" max-width="200px" alt="..."/>
                             </div>
                         ):null
